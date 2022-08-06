@@ -1,2 +1,2 @@
 # composition
-Composition Example
+An example of how composition works in React
