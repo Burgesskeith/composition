@@ -6,7 +6,7 @@ import Ticket from "./components/Ticket";
 import DropField from "./components/utilities/DropField";
 
 function App() {
-  const [state, setState] = useState(null);
+  const [state, setState] = useState("");
 
   const handleSelect = (e) => {
     setState(e.target.value);

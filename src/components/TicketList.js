@@ -3,7 +3,7 @@ import React from "react";
 const TicketList = ({ children }) => {
   return (
     <>
-      <div className="mb-4 text-2xl pl-6">Here's a list of tickets</div>
+      <div className="mb-4 text-2xl pl-6">TicketList Page</div>
       <div className="mb-4 pl-12">
         <ul>
           <li>Ticket 1</li>
