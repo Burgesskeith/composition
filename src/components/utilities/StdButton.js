@@ -1,3 +1,5 @@
+// Standard button needs to be placed in the component with
+
 import React from "react";
 
 const StdButton = ({ textColor, bgColor, children }) => {

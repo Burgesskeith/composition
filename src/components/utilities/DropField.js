@@ -1,5 +1,6 @@
 import React from "react";
 import StdButton from "./StdButton";
+import { FaAngleRight } from "react-icons/fa";
 
 const DropField = ({ state, handleSelect, handleSubmit }) => {
   return (
@@ -20,9 +21,19 @@ const DropField = ({ state, handleSelect, handleSubmit }) => {
         </select>
       </div>
       <div className="flex justify-around">
-        <StdButton size="sm" textColor="white" bgColor="red-600">
-          <p>Click Me</p>
-        </StdButton>
+        {/* If there's a value for state show the button */}
+        {state && (
+          <StdButton size="sm" textColor="white" bgColor="red-600">
+            <div className="flex items-center">
+              <div>
+                <p>Click Me</p>
+              </div>
+              <div className="ml-2">
+                <span clasName="pb-2">></span>
+              </div>
+            </div>
+          </StdButton>
+        )}
       </div>
     </form>
   );

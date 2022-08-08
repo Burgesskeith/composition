@@ -6,9 +6,9 @@ import Ticket from "./components/Ticket";
 import DropField from "./components/utilities/DropField";
 
 function App() {
-  const [state, setState] = useState("");
+  const [state, setState] = useState("Westpac Bank");
 
-  const handleSelect = (e) => {
+  const handleChange = (e) => {
     setState(e.target.value);
   };
   const handleSubmit = (e) => {
@@ -23,7 +23,7 @@ function App() {
       </div>
       <DropField
         state={state}
-        handleSelect={handleSelect}
+        handleSelect={handleChange}
         handleSubmit={handleSubmit}
       />
       <div>
