@@ -4,9 +4,11 @@ import Tickets from "./components/Tickets";
 import TicketList from "./components/TicketList";
 import Ticket from "./components/Ticket";
 import DropField from "./components/utilities/DropField";
+import TicketData from "./components/data/TicketData";
 
 function App() {
   const [state, setState] = useState("Westpac Bank");
+  const [data, setData] = useState(TicketData);
 
   const handleChange = (e) => {
     setState(e.target.value);
@@ -29,7 +31,7 @@ function App() {
       <div>
         {state && (
           <Tickets>
-            <TicketList>
+            <TicketList data={data}>
               <Ticket company={state} />
             </TicketList>
           </Tickets>

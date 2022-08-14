@@ -1,11 +1,10 @@
 import React from "react";
-import TicketData from "./data/TicketData";
 
-const TicketList = ({ children }) => {
+const TicketList = ({ children, data }) => {
   const handleClick = (e) => {
     alert(e.target.innerText);
   };
-  const listItems = TicketData.map((item) => (
+  const listItems = data.map((item) => (
     <>
       <ul>
         <li
