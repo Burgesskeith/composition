@@ -9,15 +9,15 @@ const Ticket = ({ company }) => {
           My Company is - <strong>{company}</strong>
         </div>
         <div className="mb-8">
-          <p>The data above is passed through children to this ticket page</p>
+          <p>
+            The data above is passed directly to this ticket page bypassing
+            intermediate pages
+          </p>
           <p>
             When you choose a bank from the drop down list the state changes in
-            the App component
+            the App component but reflects 4 levels deep without prop drilling.
           </p>
-          <p className="mb-6">
-            It's then passed down through children to the ticketList where the
-            company prop is used.
-          </p>
+
           <hr />
         </div>
       </div>

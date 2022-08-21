@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="border-b mb-6">
         <NavBar />
       </div>
       <DropField
