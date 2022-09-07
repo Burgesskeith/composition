@@ -19,7 +19,7 @@ const TicketList = ({ children, data }) => {
   ));
   return (
     <>
-      <div className="mb-4 text-2xl pl-6">TicketList Page</div>
+      <div className="mb-4 text-2xl pl-6 py-6">TicketList Page</div>
       <div className="mb-4 pl-12">{listItems}</div>
       <hr />
       <div>{children}</div>

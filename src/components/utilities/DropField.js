@@ -29,7 +29,7 @@ const DropField = ({ state, handleSelect, handleSubmit }) => {
                 <p>Click Me</p>
               </div>
               <div className="ml-2">
-                <span clasName="pb-2">></span>
+                <span clasName="pb-2"></span>
               </div>
             </div>
           </StdButton>

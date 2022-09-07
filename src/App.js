@@ -5,6 +5,7 @@ import TicketList from "./components/TicketList";
 import Ticket from "./components/Ticket";
 import DropField from "./components/utilities/DropField";
 import TicketData from "./components/data/TicketData";
+import AdjacentPage from "./components/AdjacentPage";
 
 function App() {
   const [state, setState] = useState("Westpac Bank");
@@ -13,6 +14,7 @@ function App() {
   const handleChange = (e) => {
     setState(e.target.value);
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("You chose " + state);
@@ -32,7 +34,14 @@ function App() {
         {state && (
           <Tickets>
             <TicketList data={data}>
-              <Ticket company={state} />
+              <div className="flex justify-start">
+                <div className="w-1/2">
+                  <Ticket company={state} handleChange={handleChange} />
+                </div>
+                <div className="w-1/2">
+                  <AdjacentPage company={state} handleChange={handleChange} />
+                </div>
+              </div>
             </TicketList>
           </Tickets>
         )}
