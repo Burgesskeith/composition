@@ -22,7 +22,7 @@ const DropField = ({ state, handleSelect, handleSubmit }) => {
       </div>
       <div className="flex justify-around">
         {/* If there's a value for state show the button */}
-        {state && (
+        {/* {state && (
           <StdButton size="sm" textColor="white" bgColor="red-600">
             <div className="flex items-center">
               <div>
@@ -33,7 +33,7 @@ const DropField = ({ state, handleSelect, handleSubmit }) => {
               </div>
             </div>
           </StdButton>
-        )}
+        )} */}
       </div>
     </form>
   );
